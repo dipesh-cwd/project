@@ -18,11 +18,35 @@
     height: 65px;
     width: 65px;
     margin-left: 10px;
+    box-shadow: 0 0 5px rgb(255, 255, 255);
+    border-radius: 50%;
 
 
 }
 .nav{
-    margin-left: 15px;
+    margin-left: 55px;
     display: flex;
     gap: 20px;
+    width: 30%;
+    justify-content: space-between;
+    border: 0px solid black;
+    position: relative;
+}
+
+.category-ul{
+    list-style-type: none;
+}
+
+.search{
+    margin-left: 40px;
+    width: 30%;
+}
+
+input[type="search"]{
+    width: 100%;
+}
+
+.list-div{
+    position: relative;
+    z-index: 1000;
 }
