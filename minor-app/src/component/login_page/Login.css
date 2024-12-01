@@ -1,0 +1,218 @@
+/* 
+
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.255);
+    backdrop-filter: blur(2px);
+    height: 70px;
+    
+}
+
+
+body{
+  background-image: url(2.jpg);
+background-repeat: no-repeat;
+  background-size:100% 750px;
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+ 
+}
+header h2{
+
+    position: absolute;
+    left: 15px;
+    background-color: red;
+    border-radius: 50%;
+    border: 1px solid red;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+}
+nav{
+    
+  position: absolute;
+  right: 70px;
+   
+}
+header nav a{
+font-size: 1.2em;
+margin: 30px 20px 0px 20px;
+font-weight: 900;
+color: black;
+background-color: #ccc;
+border-radius: 10px;
+padding: 2px;
+border: 2px solid white;
+text-decoration: none;
+transition: .5s;
+}
+header nav a:hover{
+ Z
+  color:white;
+  background-color: transparent;
+
+}
+
+.login_btn{
+  font-weight: bold;
+  font-size: large;
+  border: 2px solid white;
+  border-radius: 10px;
+  background-color: #ccc;
+  outline: none;
+cursor: pointer;
+transition: .5s;
+}
+
+.login_btn:hover{
+  background-color: transparent;
+  color: white;
+}
+
+
+.main_form{
+
+  width: 353.2px;
+position: absolute;
+top: 200px;
+left: 40%;
+display: flex;
+flex-direction: row;
+
+
+ overflow: hidden;
+border: 1px dashed white;
+
+}
+
+.main_form .submain_form h2{
+
+
+text-align: center;
+font-size: 2em;
+font-weight: 900;
+color: white;
+
+}
+.submain_form{
+  padding: 10px;
+  border: 2px solid white;
+  position: relative;
+  border-radius: 10px;
+  
+  backdrop-filter: blur(3px);
+}
+
+
+
+.input_field{
+  position: relative;
+  margin: 10px;
+}
+
+.input_box{
+
+height: 40px;
+width: 100%;
+border: none;
+border-bottom: 3px solid white;
+background-color: transparent;
+outline: none;
+padding: 5px;
+color: white;
+font-weight: 500;
+font-size: 1em;
+
+letter-spacing: 1.5px;
+
+
+
+
+}
+
+.info_lable{
+font-weight: 900;
+font-size: larger;
+position: absolute; 
+color: white;
+left: 10px;
+bottom: 15px;
+
+
+  
+}
+
+.span_section{
+position: relative;
+left: 250px;
+top: 30px;
+
+}
+
+.lable_forget a,.dont_forget{
+
+  text-decoration: none;
+  color: white;
+  font-weight: 900;
+  font-size: 1.09em;
+
+}
+.lable_forget a:hover{
+
+  color: blue;
+}
+
+.forget{
+  margin-left: 60px;
+}
+
+
+input[type="checkbox"]{
+
+  height: 20px;
+  width: 20px;
+}
+
+input[type="submit"]{
+  margin-left: 250px;
+  height: 30px;
+  width: 80px;
+  border-radius: 10px;
+  border: 2px solid white;
+  transition: .5s;
+  font-weight: 900;
+  font-size: 1.1em;
+  background-color: transparent;
+  color: white;
+}
+
+input[type="submit"]:hover{
+ background-color: white;
+  color: black;
+  cursor: pointer;
+
+}
+input:focus~label,
+input:focus~:valid{
+top:-5px; 
+}
+
+ */
+
+ .div{
+
+    height: 100px;
+    width: 300px;
+    border: 2px solid black;
+    /* background-color: #ddd; */
+ }
+
+
+ 
