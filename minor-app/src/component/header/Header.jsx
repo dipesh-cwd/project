@@ -2,13 +2,11 @@ import React from "react";
 import { useState } from "react";
 
 import "./Header.css";
+import Dropdown from "../../components/Dropdown/Dropdown";
+import DropdownItem from "../../components/DropdownItem/DropdownItem.jsx";
 
 function Header() {
-  const [isopen, setIsopen] = useState(false);
-
-  const dropDown = () => {
-    setIsopen(!isopen);
-  };
+  const items = ["Car", "Bike", "Hice"];
 
   const LogoPic = "./public/logo.png";
 
@@ -19,26 +17,17 @@ function Header() {
         <a href="#" className="home-btn">
           Home
         </a>
-        <div className="category" style={{ position: "relative" }}>
-          <button onClick={dropDown}>
-            Category <i className="fa-solid fa-angle-down fa-lg"></i>
-          </button>
-
-          {isopen && (
-            <div className="list-div">
-              <ul className="category-ul">
-                <li>
-                  <a href="#">Car</a>
-                </li>
-                <li>
-                  <a href="#">Bus</a>
-                </li>
-                <li>
-                  <a href="#">Bike</a>
-                </li>
-              </ul>
-            </div>
-          )}
+        <div className="content">
+          <Dropdown
+            buttonText="Category"
+            content={
+              <>
+                {items.map((item, id) => (
+                  <DropdownItem key={id}>{`${item}`}</DropdownItem>
+                ))}
+              </>
+            }
+          />
         </div>
         <a href="#" className="about-btn">
           About us
@@ -52,8 +41,8 @@ function Header() {
         <div className="search-logo"></div>
       </div>
       <a href="#" className="pp-btn">
-          privacy policy
-        </a>
+        privacy policy
+      </a>
     </div>
   );
 }
