@@ -30,19 +30,21 @@ function Header() {
           />
         </div>
         <a href="#" className="about-btn">
-          About us
+          About
         </a>
         <a href="#" className="contact-btn">
-          Contact us
+          Contact
         </a>
       </nav>
       <div className="search">
-        <input type="search" placeholder="type to search..." />
-        <div className="search-logo"></div>
+        <input className = "type_section" type="search" placeholder="type to search..." />
+        <div className="search-logo"><i className="fa-solid fa-magnifying-glass fa-lg" style={{color:" #ffffff"}}></i></div>
       </div>
-      <a href="#" className="pp-btn">
-        privacy policy
-      </a>
+      
+      <div className="profile"><i className="fa-solid fa-user fa-lg" style={{color: "#ffffff"}}></i></div>
+      <div className="cart"><i className="fa-solid fa-cart-shopping fa-xl" style={{color:"#ffffff"}}></i></div>
+      <div className="burger"><i className="fa-solid fa-bars fa-xl" style={{color: "#ffffff"}}></i></div>
+      <div className="threeDot"><i className="fa-solid fa-ellipsis-vertical fa-xl" style={{color:" #fcfcfc"}}></i></div>
     </div>
   );
 }
