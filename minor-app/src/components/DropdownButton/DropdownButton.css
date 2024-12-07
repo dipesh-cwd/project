@@ -2,20 +2,30 @@
   display: flex;
   align-items: center;
   width: fit-content;
-  /* padding: 1rem; */
-  /* background-color: white; */
-  border-radius: 0.5rem;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 2px; 
+ color: white;
   cursor: pointer;
+  transition: .3s all;
+  
 }
+.dropdown-btn:hover{
+  /* background-color:rgba(255, 255, 255, 0.207);
+  backdrop-filter: blur(5px); */
+  color: blue;
+  border-bottom:1px solid blue ;
+
+}
+/* .dropdown-btn:active{
+  color: red;
+} */
 
 .toggle-icon {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: 1rem;
+  margin-left: 13px;
 }
 
 .button-open {
-  border: rgb(147 197 253) 2px solid;
+  
 }
