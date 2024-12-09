@@ -14,7 +14,7 @@ const DropdownButton = forwardRef((props, ref) => {
     >
       {children}
       <span className="toggle-icon">
-         {(open ?<i class="fa-solid fa-angle-up"></i> :<i class="fa-solid fa-angle-down"></i>)} 
+         {(open ?<i className="fa-solid fa-angle-up"></i> :<i className="fa-solid fa-angle-down"></i>)} 
       </span>
     </div>
   );

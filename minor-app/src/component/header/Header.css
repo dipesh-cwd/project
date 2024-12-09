@@ -5,6 +5,7 @@
   flex-direction: row;
   align-items: center;
   margin-bottom: 40px;
+  position: fixed;
 }
 
 .logo {
@@ -18,6 +19,7 @@
 .logo:hover {
   box-shadow: 0 0 6px rgba(255, 255, 255, 0.814);
   z-index: 1000;
+  cursor: pointer;
 }
 
 .nav {
