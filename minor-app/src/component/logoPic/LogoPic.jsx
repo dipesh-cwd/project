@@ -3,18 +3,15 @@ import React from "react";
 import { useState } from "react";
 // import { isLogoOpen } from "../header/Header.jsx";
 
-function LogoPic() {
+function LogoPic({logoOpen, handelClose}) {
   const logoImage = "./public/logo.png";
-  const [logoOpen, setLogoOpen] = useState(true);
-  function closeLogo (){
-    setLogoOpen(false);
-  }
+  
 
   return (
     <>
       {logoOpen && (
         <div className="logo-big-box">
-          <div className="logo-close" onClick={closeLogo}>
+          <div className="logo-close" onClick={handelClose}>
             <i
               className="fa-solid fa-circle-xmark"
               style={{ color: "#fe010e" }}

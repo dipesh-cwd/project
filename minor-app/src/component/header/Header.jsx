@@ -1,21 +1,26 @@
 import React from "react";
 import { useState } from "react";
-
 import "./Header.css";
 import Dropdown from "../../components/Dropdown/Dropdown";
 import DropdownItem from "../../components/DropdownItem/DropdownItem.jsx";
-
+import LogoPicImage from "../logoPic/LogoPic.jsx";
 function Header() {
   const items = ["Car", "Bike", "Hice"];
 
   const LogoPic = "./public/logo.png";
   const [isLogoOpen, setIsLogoOpen] = useState(false);
   function openLogoPic() {
-    setIsLogoOpen(true);
+    setIsLogoOpen(!isLogoOpen);
   }
 
+
   return (
+    <>
+    
+    
+    <LogoPicImage logoOpen = {isLogoOpen} handelClose = {openLogoPic}/>
     <div className="header">
+    
       <img
         src={LogoPic}
         alt="Logo pic"
@@ -78,6 +83,10 @@ function Header() {
         ></i>
       </div>
     </div>
+    
+    
+    </>
+  
   );
 }
 
