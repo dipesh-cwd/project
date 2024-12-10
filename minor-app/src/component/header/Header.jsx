@@ -4,13 +4,24 @@ import "./Header.css";
 import Dropdown from "../../components/Dropdown/Dropdown";
 import DropdownItem from "../../components/DropdownItem/DropdownItem.jsx";
 import LogoPicImage from "../logoPic/LogoPic.jsx";
+import ThreeDot from "./threeDot/ThreeDot.jsx";
 function Header() {
-  const items = ["Car", "Bike", "Hice"];
+const items = ["Car", "Bike", "Hice"];
 
   const LogoPic = "./public/logo.png";
+
   const [isLogoOpen, setIsLogoOpen] = useState(false);
   function openLogoPic() {
     setIsLogoOpen(!isLogoOpen);
+  }
+
+
+  const [isThreeDotOpen, setIsThreeDotOpen] = useState(false);
+
+  function handleThreeDot() {
+    console.log("called handleThreeDot");
+    setIsThreeDotOpen(!isThreeDotOpen);
+    console.log(isThreeDotOpen);
   }
 
 
@@ -76,7 +87,7 @@ function Header() {
       <div className="burger">
         <i className="fa-solid fa-bars fa-xl" style={{ color: "#ffffff" }}></i>
       </div>
-      <div className="threeDot">
+      <div className="threeDot" onClick={handleThreeDot}>
         <i
           className="fa-solid fa-ellipsis-vertical fa-xl"
           style={{ color: " #fcfcfc" }}
@@ -84,6 +95,7 @@ function Header() {
       </div>
     </div>
     
+    <ThreeDot ThreeDotOpen = {isThreeDotOpen} handleThreeDot = {handleThreeDot}/>
     
     </>
   

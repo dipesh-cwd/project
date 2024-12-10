@@ -4,7 +4,7 @@
     height: 350px;
     width: 350px;
     border: 0px solid black;
-    position: absolute;
+    position: fixed;
     top: 20px;
     left: 1%;
     display: flex;
