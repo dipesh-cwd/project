@@ -5,7 +5,7 @@
     height: 89vh;
     width: 250px;
     border: 0px solid black;
-    position: absolute;
+    position: fixed;
     top: 60px;
     right: 2px;
     display: flex;
@@ -40,4 +40,11 @@ padding-top: 10px;
     background: rgba(255, 255, 255, 0.159);
     backdrop-filter: blur(2px);
     color: black;
+}
+
+
+@media (max-width: 750px){
+    .three_dot{
+        display: none;
+    }
 }

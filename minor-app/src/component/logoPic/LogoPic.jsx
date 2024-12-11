@@ -1,16 +1,34 @@
 import "./LogoPic.css";
 import React from "react";
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 // import { isLogoOpen } from "../header/Header.jsx";
 
-function LogoPic({logoOpen, handelClose}) {
+function LogoPic({logoOpen, handelClose, setIsLogoOpen}) {
+  const logoRef = useRef(null);
+
+  function closeOutSideLogo(event){
+    if(logoRef.current && !logoRef.current.contains(event.target)){
+      setIsLogoOpen(false);
+    }
+  }
+
+  useEffect(()=>{
+
+document.addEventListener('mousedown', closeOutSideLogo);
+return () =>{
+  document.removeEventListener('mousedown', closeOutSideLogo);
+
+};
+
+  },[]);
+
   const logoImage = "./public/logo.png";
   
 
   return (
     <>
       {logoOpen && (
-        <div className="logo-big-box">
+        <div  ref={logoRef}  className="logo-big-box">
           <div className="logo-close" onClick={handelClose}>
             <i
               className="fa-solid fa-circle-xmark"
