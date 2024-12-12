@@ -21,40 +21,8 @@
   z-index: 1000;
   cursor: pointer;
 }
-
-
-/* css for nav */
-/* .nav {
-  margin-left: 55px;
-  display: flex;
-  gap: 20px;
-  width: 30%;
-  justify-content: space-between;
-  border: 0px solid black;
-  position: relative;
-}
-
-
-.nav a {
-  color: white;
-  text-decoration: none;
-  font-size: 1.1em;
-  display: inline-block;
-  transition: 0.3s all;
-}
-
-.nav a:hover {
-  color: blue;
-  border-bottom: 1px solid blue;
-} */
-
-/* end css for nav */
-
-
-
 .search {
-    /* position: relative;
-    left: 20px; */
+  
     height: 30px;
     display: flex;
   margin-left: 40px;
@@ -192,13 +160,6 @@ input[type="search"] {
     font-size: medium;
   }
 
-  /* .nav a {
-    font-size: 1em;
-}
-.nav{
-    margin-left: 29px;
-    width: 35%;
-} */
 }
 
 @media (max-width: 750px) {
@@ -207,10 +168,6 @@ input[type="search"] {
     position: relative;
     left: 100px;
   }
-
-  /* .nav {
-    display: none;
-  } */
 
   .burger {
     right: 15px;
