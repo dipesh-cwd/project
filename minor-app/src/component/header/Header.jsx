@@ -1,17 +1,26 @@
 import React from "react";
 import { useState } from "react";
 import "./Header.css";
-import Dropdown from "../../components/Dropdown/Dropdown";
-import DropdownItem from "../../components/DropdownItem/DropdownItem.jsx";
+import Nav from "./nav/Nav.jsx";
+
+
+// start import for Dropdown
+// import Dropdown from "../../components/Dropdown/Dropdown";
+// import DropdownItem from "../../components/DropdownItem/DropdownItem.jsx";
+// end imoprt for Dropdown
+
+
+
 import LogoPicImage from "../logoPic/LogoPic.jsx";
 import ThreeDot from "./threeDot/ThreeDot.jsx";
-
 import Cart from "./cart/Cart.jsx";
 import Profile from "./profile/Profile.jsx";
 import ThreeLine from './threeLine/ThreeLine.jsx';
 
 function Header() {
-  const items = ["Car", "Bike", "Hice"];
+  // array for nav
+  // const items = ["Car", "Bike", "Hice"];
+
   const LogoPic = "./public/logo.png";
 // to handel logo big image open or not
   const [isLogoOpen, setIsLogoOpen] = useState(false);
@@ -59,6 +68,9 @@ function Header() {
           className="logo"
           onClick={openLogoPic}
         />
+<Nav/>
+         {/* nav is start from here 
+
         <nav className="nav">
           <a href="#" className="home-btn">
             Home
@@ -82,6 +94,9 @@ function Header() {
             Contact
           </a>
         </nav>
+         nav is end here  */}
+
+
         <div className="search">
           <input
             className="type_section"

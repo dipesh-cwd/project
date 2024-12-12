@@ -22,7 +22,9 @@
   cursor: pointer;
 }
 
-.nav {
+
+/* css for nav */
+/* .nav {
   margin-left: 55px;
   display: flex;
   gap: 20px;
@@ -31,6 +33,23 @@
   border: 0px solid black;
   position: relative;
 }
+
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1em;
+  display: inline-block;
+  transition: 0.3s all;
+}
+
+.nav a:hover {
+  color: blue;
+  border-bottom: 1px solid blue;
+} */
+
+/* end css for nav */
+
 
 
 .search {
@@ -73,18 +92,7 @@ input[type="search"] {
   z-index: 1000;
 }
 
-.nav a {
-  color: white;
-  text-decoration: none;
-  font-size: 1.1em;
-  display: inline-block;
-  transition: 0.3s all;
-}
 
-.nav a:hover {
-  color: blue;
-  border-bottom: 1px solid blue;
-}
 
 .profile {
   height: 30px;
@@ -150,6 +158,7 @@ input[type="search"] {
   padding: 2px;
   border-radius: 10px;
 }
+
 .burger:hover,
 .cart:hover,
 .profile:hover,
@@ -158,6 +167,8 @@ input[type="search"] {
   backdrop-filter: blur(5px);
   cursor: pointer;
 }
+
+
 
 @media (min-width: 750px) and (max-width: 1150px) {
   .search {
@@ -181,13 +192,13 @@ input[type="search"] {
     font-size: medium;
   }
 
-  .nav a {
+  /* .nav a {
     font-size: 1em;
 }
 .nav{
     margin-left: 29px;
     width: 35%;
-}
+} */
 }
 
 @media (max-width: 750px) {
@@ -197,9 +208,9 @@ input[type="search"] {
     left: 100px;
   }
 
-  .nav {
+  /* .nav {
     display: none;
-  }
+  } */
 
   .burger {
     right: 15px;
