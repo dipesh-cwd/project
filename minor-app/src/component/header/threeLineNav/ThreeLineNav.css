@@ -1,0 +1,74 @@
+
+
+.threeLineNav {
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.46);
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+  }
+  
+
+  .threeLineNav a {
+    color: white;
+    text-decoration: none;  
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  
+  .threeLineNav a:hover {
+   background: rgba(255, 255, 255, 0.159);
+    backdrop-filter: blur(2px);
+    color: black;
+  }
+  
+  /* @media (min-width: 750px) and (max-width: 1150px) {
+    .threeLineNav a {
+      font-size: 1em;
+    }
+    .threeLineNav {
+      margin-left: 29px;
+      width: 35%;
+    }
+  }
+  
+  @media (max-width: 750px) {
+    .threeLineNav {
+      display: none;
+    }
+  } */
+  
+
+
+  .btn_style{
+
+    height: 40px;
+    width:100% ;
+    border-radius: 10px; 
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-weight: 0;
+   
+    cursor: pointer;
+ 
+}
+
+.btn_style:hover{
+
+    background: rgba(255, 255, 255, 0.159);
+    backdrop-filter: blur(2px);
+    color: black;
+}

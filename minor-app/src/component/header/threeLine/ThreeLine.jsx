@@ -1,5 +1,6 @@
 import React from "react";
 import "./ThreeLine.css";
+import ThreeLineNav from "../threeLineNav/ThreeLineNav";
 
 import { useState, useRef, useEffect } from "react";
 
@@ -22,7 +23,7 @@ function ThreeLine({ isDashOpen, setIsDashOpen }) {
     <>
       {isDashOpen && (
         <div ref={lineRef} className="threeLine_section">
-         
+         <ThreeLineNav/>
         </div>
       )}
     </>

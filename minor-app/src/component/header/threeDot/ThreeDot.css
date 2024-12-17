@@ -30,8 +30,13 @@ padding-top: 10px;
     background-color: transparent;
     color: white;
     font-weight: 0;
-    font-size: ;
+    
     cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
  
 }
 

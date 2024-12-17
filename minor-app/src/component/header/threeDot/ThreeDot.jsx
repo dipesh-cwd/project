@@ -1,7 +1,7 @@
 import React from 'react';
 import './ThreeDot.css';
 import { useState, useEffect, useRef } from 'react';
-
+import {NavLink} from 'react-router-dom';
 
 function ThreeDot ({ThreeDotOpen, setIsThreeDotOpen}) {
 
@@ -18,7 +18,7 @@ function ThreeDot ({ThreeDotOpen, setIsThreeDotOpen}) {
   useEffect(() => {
 
     document.addEventListener('mousedown', handelBoxOpen);
- console.log("use effect is called");
+
     return () => {
       document.removeEventListener('mousedown', handelBoxOpen);
     };
@@ -26,16 +26,29 @@ function ThreeDot ({ThreeDotOpen, setIsThreeDotOpen}) {
 
   }, []);
 
+
+  function confirmExit(){
+    if(confirm("Are you want to exit?")){
+      window.location.href = "https://www.google.com";
+      // window.close();
+    }
+  }
+
   return (
     <>
   {ThreeDotOpen &&  <div  ref={btnRef} className='three_dot' >
-  
-      <button className='btn_profile btn_style'>Profile</button>
-      <button className='btn_setting btn_style'>Setting</button>
-      <button className='btn_help btn_style'>Help</button>
-      <button className='btn_exit btn_style'>Exit</button>
-      <button className='btn_privacy btn_style'>privacy policy</button>
+   
+  <NavLink to="/profile" className={({ isActive }) => `btn_profile  btn_style ${isActive ? 'active' : ''}`}
+         >Profile</NavLink>
 
+
+
+<NavLink to="/setting" className={({ isActive }) => `btn_profile  btn_style ${isActive ? 'active' : ''}`}
+         >Setting</NavLink>
+  <NavLink to="/help" className={({ isActive }) => `btn_profile  btn_style ${isActive ? 'active' : ''}`}
+         >Help</NavLink>      <button className='btn_exit btn_style' onClick={confirmExit}>Exit</button>
+  <NavLink to="/privacy and policy" className={({ isActive }) => `btn_profile  btn_style ${isActive ? 'active' : ''}`}
+         >Privacy & Policy</NavLink>
 
 
       </div> }  

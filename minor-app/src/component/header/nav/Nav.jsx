@@ -3,14 +3,13 @@ import React from "react";
 import Dropdown from "../../../components/Dropdown/Dropdown.jsx";
 import DropdownItem from "../../../components/DropdownItem/DropdownItem.jsx";
 const items = ["Car", "Bike", "Hice"];
-
-function Nav() {
-  return (
+import { NavLink} from "react-router-dom";
+function Nav(){
+  return(
     <>
       <nav className="nav">
-        <a href="#" className="home-btn">
-          Home
-        </a>
+      <NavLink to="/" className={({ isActive }) => `nav_btn home_btn ${isActive ? 'active' : ''}`}
+       >Home</NavLink>
         <div className="content">
           <Dropdown
             buttonText="Category"
@@ -23,12 +22,12 @@ function Nav() {
             }
           />
         </div>
-        <a href="#" className="about-btn">
-          About
-        </a>
-        <a href="#" className="contact-btn">
-          Contact
-        </a>
+       <NavLink to="/about" className={({ isActive }) => `nav_btn about_btn ${isActive ? 'active' : ''}`}
+       >About</NavLink>
+        
+      
+        <NavLink to="/contact" className={({ isActive }) => `nav_btn contact_btn ${isActive ? 'active' : ''}`}
+       >Contact</NavLink>
       </nav>
     </>
   );
