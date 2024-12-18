@@ -1,37 +1,88 @@
 import "./Footer.css";
+import { NavLink } from "react-router-dom";
 
 function Footer() {
-  const LogoPic = "./public/logo.png";
+  function goToFacebook() {
+    window.location.href =
+      "https://www.facebook.com/profile.php?id=61553846560963";
+  }
+
+  function goToYoutube() {
+    window.location.href =
+      "https://youtube.com/@dearsubscriber3094?si=WEXYClnKnuY5KJB2";
+  }
   return (
     <div className="footer">
-      <div className="site-logo-name">
-        <div className="site-name">
-          <p className="site-p">RideNow </p>
-          <img src={LogoPic} alt="site-logo" />
-          <p className="rent">Rent a Vehicle</p>
+      <div className="footer_one">
+        <div className="company_info footer_box">
+          <h3>RideNow</h3>
+          <ul>
+            <li>
+              <NavLink to="/" className="footer_navLink">
+                Home
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/about" className="footer_navLink">
+                About Us
+              </NavLink>
+            </li>
+          </ul>
+        </div>
+        <div className="help_support footer_box">
+          <h3>Help & Support</h3>
+          <ul>
+            <li>
+              <NavLink to="/faqs" className="footer_navLink">
+                FAQs
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/contact" className="footer_navLink">
+                Contact Us
+              </NavLink>
+            </li>
+          </ul>
+        </div>
+        <div className="follow footer_box">
+          <h3>Follow Us</h3>
+          <ul>
+            <li onClick={goToFacebook} className="footer_navLink">
+              Facebook
+            </li>
+            <li>Instagram</li>
+            <li>Twitter</li>
+            <li onClick={goToYoutube} className="footer_navLink">
+              YouTube
+            </li>
+            <li>What app</li>
+          </ul>
+        </div>
+        <div className="fast_link footer_box">
+          <h3>Fast Link</h3>
+          <ul>
+            <li>Book a Vehicle</li>
+            <li>
+              <NavLink to="/offer" className="footer_navLink">
+                Offers
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/location" className="footer_navLink">
+                Location
+              </NavLink>
+            </li>
+          </ul>
         </div>
       </div>
-      <div className="info-box">
-        <div className="other-site-link">
-          <p>Follow us </p>
-          <div className="below_follow">
-            <a href="https://youtube.com/@dearsubscriber3094?si=WEXYClnKnuY5KJB2"><i className="fa-brands fa-youtube fa-xl" style={{color: "#fd2008"}}></i></a>
-            <a href="https://www.facebook.com/profile.php?id=61553846560963"><i className="fa-brands fa-facebook fa-xl" style={{color: "blue"}}></i></a>
-            <a href="www.youtube.com/@DipeshYadav-h2g"><i className="fa-brands fa-instagram fa-xl" style={{color: ""}}></i></a>
-            <a href="www.youtube.com/@DipeshYadav-h2g"><i className="fa-brands fa-twitter fa-xl" style={{color: "white"}}></i></a>
 
-
-
-
-          </div>
-        </div>
-        <div className="copy-right">
-
-          <h5>&copy; 2024 RideNow. All rights reserved.</h5>
-        </div>
-        <div className="nothing">
-          <h3>links :-</h3>
-        </div>
+      <div className="footer_two">
+        <h5>
+          &copy; 2024 RideNow. All rights reserved.|{" "}
+          <NavLink to="/privacy and policy" className="footer_navLink">
+            Privacy & Policy
+          </NavLink>
+        </h5>
       </div>
     </div>
   );

@@ -1,21 +1,21 @@
 import React from "react";
-import { useState } from "react";
+import { useState,useEffect } from "react";
 import "./Header.css";
 import Nav from "./nav/Nav.jsx";
 import LogoPicImage from "../logoPic/LogoPic.jsx";
 import ThreeDot from "./threeDot/ThreeDot.jsx";
 import Cart from "./cart/Cart.jsx";
 import Profile from "./profile/Profile.jsx";
-import ThreeLine from './threeLine/ThreeLine.jsx';
+import ThreeLine from "./threeLine/ThreeLine.jsx";
 
 function Header() {
   const LogoPic = "./public/logo.png";
-// to handel logo big image open or not
+  // to handel logo big image open or not
   const [isLogoOpen, setIsLogoOpen] = useState(false);
   function openLogoPic() {
     setIsLogoOpen(!isLogoOpen);
   }
-// to handel three dot section open or not
+  // to handel three dot section open or not
   const [isThreeDotOpen, setIsThreeDotOpen] = useState(false);
   function handleThreeDot() {
     setIsThreeDotOpen(true);
@@ -34,13 +34,25 @@ function Header() {
     setIsProfileOpen(true);
   }
 
-   // to handel three dash is open or not
+  // to handel three dash is open or not
 
-   const [isDashOpen, setIsDashOpen] = useState(false);
-   function handelDash() {
+  const [isDashOpen, setIsDashOpen] = useState(false);
+  function handelDash() {
     setIsDashOpen(true);
-   }
-
+  }
+   // to show home button in three Dot
+  
+    const [isLessSize, setIsLessSize] = useState(window.innerWidth < 750);
+    const checkWidth = () => {
+      setIsLessSize(window.innerWidth < 750);
+    };
+  
+    useEffect(() => {
+      window.addEventListener("resize", checkWidth);
+      return () => {
+        window.removeEventListener("resize", checkWidth);
+      };
+    }, []);
 
   return (
     <>
@@ -56,7 +68,7 @@ function Header() {
           className="logo"
           onClick={openLogoPic}
         />
-<Nav/>
+        <Nav />
 
         <div className="search">
           <input
@@ -84,17 +96,26 @@ function Header() {
             style={{ color: "#ffffff" }}
           ></i>
         </div>
-        <div className="burger" onClick={handelDash}>
+        {/* <div className="burger" onClick={handelDash}>
           <i
             className="fa-solid fa-bars fa-xl"
             style={{ color: "#ffffff" }}
           ></i>
-        </div>
+        </div> */}
         <div className="threeDot" onClick={handleThreeDot}>
+          {isLessSize ?
+          <i
+          className="fa-solid fa-bars fa-xl"
+          style={{ color: "#ffffff" }}
+        ></i>
+          :
           <i
             className="fa-solid fa-ellipsis-vertical fa-xl"
             style={{ color: " #fcfcfc" }}
-          ></i>
+          ></i> 
+
+          }
+          
         </div>
       </div>
 
@@ -103,8 +124,11 @@ function Header() {
         setIsThreeDotOpen={setIsThreeDotOpen}
       />
       <Cart isCartOpen={isCartOpen} setIsCartOpen={setIsCartOpen} />
-      <Profile isProfileOpen={isProfileOpen} setIsProfileOpen={setIsProfileOpen} />
-<ThreeLine isDashOpen ={isDashOpen}  setIsDashOpen={setIsDashOpen}/>
+      <Profile
+        isProfileOpen={isProfileOpen}
+        setIsProfileOpen={setIsProfileOpen}
+      />
+      <ThreeLine isDashOpen={isDashOpen} setIsDashOpen={setIsDashOpen} />
     </>
   );
 }

@@ -9,6 +9,9 @@ import Privacy from "./component/privacy/Privacy.jsx";
 import Setting from "./component/setting/Setting.jsx";
 import Profile from "./component/profile/Profile.jsx";
 import Help from "./component/help/Help.jsx";
+import Faqs from "./component/faqs/Faqs.jsx";
+import Offer from "./component/offer/Offer.jsx";
+import Location from "./component/location/Location.jsx";
 
 function App() {
   return (
@@ -23,6 +26,10 @@ function App() {
         <Route exact path="/setting" element={<Setting />} />
         <Route exact path="/profile" element={<Profile />} />
         <Route path="/footer" element={<Footer />} />
+        <Route path="/faqs" element={<Faqs />} />
+        <Route path="/offer" element={<Offer />} />
+        <Route path="/location" element={<Location />} />
+
         <Route path="*" element={<Error />} />
       </Routes>
       <Footer />

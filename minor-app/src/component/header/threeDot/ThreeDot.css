@@ -1,55 +1,145 @@
-
-
-.three_dot{
-
-    height: 89vh;
-    width: 250px;
-    border: 0px solid black;
-    position: fixed;
-    top: 60px;
-    right: 2px;
-    display: flex;
-    flex-direction: column;
-padding-top: 10px;
-
-    align-items: center;
-    border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.089);
-    backdrop-filter: blur(5px);
-    z-index: 999;
-    cursor: pointer;
-
+.three_dot {
+  height: 89vh;
+  width: 250px;
+  border: 0px solid black;
+  position: fixed;
+  top: 60px;
+  right: 2px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.089);
+  backdrop-filter: blur(5px);
+  z-index: 999;
+  cursor: pointer;
+  overflow: hidden;
 }
 
-.btn_style{
-
-    height: 40px;
-    width:100% ;
-    border-radius: 10px; 
-    border: none;
-    background-color: transparent;
-    color: white;
-    font-weight: 0;
-    
-    cursor: pointer;
-    text-align: center;
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
- 
+.btn_style {
+  height: 40px;
+  width: 100%;
+  border-radius: 10px;
+  border: none;
+  background-color: transparent;
+  color: white;
+  font-weight: 0;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.btn_style:hover{
-
-    background: rgba(255, 255, 255, 0.159);
-    backdrop-filter: blur(2px);
-    color: black;
+.btn_style:hover {
+  background: rgba(255, 255, 255, 0.159);
+  backdrop-filter: blur(2px);
+  color: black;
 }
 
+.site_name {
+  color: black;
+  width: 100%;
+  height: 50px;
+  background-color: rgba(255, 255, 255, 0.256);
+  backdrop-filter: blur(5px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 10px;
+  transition: 0.3s ease-in-out;
+  align-items: center;
+}
 
-@media (max-width: 750px){
-    .three_dot{
-        display: none;
-    }
+.site_name h2 {
+  letter-spacing: 4px;
+}
+
+.site_name p {
+  font-size: 0.8em;
+  letter-spacing: 1px;
+}
+
+.exit_page {
+  min-width: 350px;
+  position: fixed;
+  top: 120px;
+  left: 30%;
+  height: 200px;
+  width: 400px;
+  border: 0px solid black;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.647);
+  backdrop-filter: blur(5px);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  transition: 1.5s all;
+}
+
+.exit_page p {
+  font-weight: 900;
+  font-size: 1.2em;
+}
+
+.conform_btn {
+  position: relative;
+  bottom: -70px;
+  right: -100px;
+  height: 25px;
+  width: 70px;
+  cursor: pointer;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  transition: 1.5s all;
+}
+.innerExit_page {
+  position: relative;
+}
+.conform_btn:hover {
+  border: 1px solid black;
+  font-weight: 900;
+  color: white;
+}
+
+.yes_btn {
+  margin-right: 50px;
+}
+
+.yes_btn:hover {
+  background-color: red;
+}
+
+.no_btn:hover {
+  background-color: rgb(12, 213, 12);
+}
+
+@media (max-width: 750px) {
+  .exit_page {
+    left: 20%;
+    height: 150px;
+    width: 300px;
+  }
+
+  .conform_btn {
+    position: relative;
+    bottom: -45px;
+    right: -60px;
+    height: 20px;
+    width: 60px;
+  }
+}
+
+@media (max-width: 500px) {
+  .exit_page {
+    left: 2%;
+  }
+}
+
+.active{
+  color: blue;
 }

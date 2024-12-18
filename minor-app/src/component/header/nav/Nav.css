@@ -8,18 +8,18 @@
   position: relative;
 }
 
-.nav a {
+ .nav_btn{
   color: white;
   text-decoration: none;
   font-size: 1.1em;
   display: inline-block;
-  transition: 0.3s all;
+  transition: 0.1s step-start;
 }
 
-.nav a:hover {
-  color: blue;
-  border-bottom: 1px solid blue;
-}
+.nav_btn:hover {
+  
+  border-bottom: 2px solid white;
+}  
 
 @media (min-width: 750px) and (max-width: 1150px) {
   .nav a {
@@ -41,3 +41,5 @@
 .active{
   color: blue;
 }
+
+

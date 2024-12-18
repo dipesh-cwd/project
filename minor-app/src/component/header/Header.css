@@ -118,13 +118,13 @@ input[type="search"] {
   align-items: center;
   text-align: center;
   height: 25px;
-  width: 10px;
+  width: auto;
 
   position: absolute;
   right: 15px;
   transition: 0.3s all;
   padding: 2px;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 .burger:hover,
@@ -187,9 +187,9 @@ input[type="search"] {
     font-size: small;
   }
 
-  .threeDot{
+  /* .threeDot{
     display: none;
-  }
+  } */
 
     
 }
