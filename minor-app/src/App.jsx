@@ -12,6 +12,8 @@ import Help from "./component/help/Help.jsx";
 import Faqs from "./component/faqs/Faqs.jsx";
 import Offer from "./component/offer/Offer.jsx";
 import Location from "./component/location/Location.jsx";
+import HowItWorks from "./component/howItWorks/HowItWorks.jsx";
+
 
 function App() {
   return (
@@ -29,6 +31,8 @@ function App() {
         <Route path="/faqs" element={<Faqs />} />
         <Route path="/offer" element={<Offer />} />
         <Route path="/location" element={<Location />} />
+        <Route path="/how it works" element={<HowItWorks />} />
+
 
         <Route path="*" element={<Error />} />
       </Routes>

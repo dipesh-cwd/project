@@ -7,6 +7,7 @@
   min-width: 360px;
   color: #ecf0f1;
   padding-bottom: 10px;
+  transition: 1.5s all;
 }
 
 .footer_one {

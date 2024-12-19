@@ -42,26 +42,30 @@ function Footer() {
                 Contact Us
               </NavLink>
             </li>
+            <li>
+              <NavLink to="/how it works" className="footer_navLink">
+                How it Works
+              </NavLink>
+            </li>
           </ul>
         </div>
         <div className="follow footer_box">
           <h3>Follow Us</h3>
           <ul>
-            <li onClick={goToFacebook} className="footer_navLink">
-              Facebook
-            </li>
-            <li>Instagram</li>
             <li>Twitter</li>
             <li onClick={goToYoutube} className="footer_navLink">
               YouTube
             </li>
-            <li>What app</li>
+            <li>WhatsApp</li>
+            <li onClick={goToFacebook} className="footer_navLink">
+              Facebook
+            </li>
+            <li>Instagram</li>
           </ul>
         </div>
         <div className="fast_link footer_box">
           <h3>Fast Link</h3>
           <ul>
-            <li>Book a Vehicle</li>
             <li>
               <NavLink to="/offer" className="footer_navLink">
                 Offers
@@ -72,6 +76,7 @@ function Footer() {
                 Location
               </NavLink>
             </li>
+            <li>Book a Vehicle</li>
           </ul>
         </div>
       </div>
