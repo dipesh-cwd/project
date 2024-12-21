@@ -13,6 +13,9 @@ import Faqs from "./component/faqs/Faqs.jsx";
 import Offer from "./component/offer/Offer.jsx";
 import Location from "./component/location/Location.jsx";
 import HowItWorks from "./component/howItWorks/HowItWorks.jsx";
+import Car from "./component/car/Car.jsx";
+import Bike from "./component/bike/Bike.jsx";
+import Hice from "./component/hice/Hice.jsx";
 
 
 function App() {
@@ -32,6 +35,9 @@ function App() {
         <Route path="/offer" element={<Offer />} />
         <Route path="/location" element={<Location />} />
         <Route path="/how it works" element={<HowItWorks />} />
+        <Route path="/car_page" element={<Car />} />
+        <Route path="/bike_page" element={<Bike />} />
+        <Route path="/hice_page" element={<Hice />} />
 
 
         <Route path="*" element={<Error />} />

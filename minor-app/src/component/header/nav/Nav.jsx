@@ -1,6 +1,7 @@
 import "./Nav.css";
 import React from "react";
 import { NavLink } from "react-router-dom";
+import DropDown from "../../dropDown/DropDown";
 function Nav() {
   return (
     <>
@@ -8,7 +9,7 @@ function Nav() {
         <NavLink to="/" className="nav_btn home_btn">
           Home
         </NavLink>
-      
+        <DropDown />
         <NavLink to="/about" className="nav_btn about_btn ">
           About
         </NavLink>

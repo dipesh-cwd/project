@@ -13,16 +13,20 @@
   text-decoration: none;
   font-size: 1.1em;
   display: inline-block;
-  transition: 0.1s step-start;
+  transition: 0.3s ease-in-out;
+  padding: 2px 4px;
+  border-radius: 5px;
 }
 
 .nav_btn:hover {
   
-  border-bottom: 2px solid white;
+  
+  background-color: rgba(255, 255, 255, 0.421);
+  color: black;
 }  
 
 @media (min-width: 750px) and (max-width: 1150px) {
-  .nav a {
+   .nav_btn {
     font-size: 1em;
   }
   .nav {
