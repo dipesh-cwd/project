@@ -1,12 +1,11 @@
 import React from "react";
-import { useState,useEffect } from "react";
+import { useState, useEffect } from "react";
 import "./Header.css";
 import Nav from "./nav/Nav.jsx";
 import LogoPicImage from "../logoPic/LogoPic.jsx";
 import ThreeDot from "./threeDot/ThreeDot.jsx";
 import Cart from "./cart/Cart.jsx";
 import Profile from "./profile/Profile.jsx";
-import ThreeLine from "./threeLine/ThreeLine.jsx";
 
 function Header() {
   const LogoPic = "./public/logo.png";
@@ -34,25 +33,19 @@ function Header() {
     setIsProfileOpen(true);
   }
 
-  // to handel three dash is open or not
+  // to show home button in three Dot
 
-  const [isDashOpen, setIsDashOpen] = useState(false);
-  function handelDash() {
-    setIsDashOpen(true);
-  }
-   // to show home button in three Dot
-  
-    const [isLessSize, setIsLessSize] = useState(window.innerWidth < 750);
-    const checkWidth = () => {
-      setIsLessSize(window.innerWidth < 750);
+  const [isLessSize, setIsLessSize] = useState(window.innerWidth < 750);
+  const checkWidth = () => {
+    setIsLessSize(window.innerWidth < 750);
+  };
+
+  useEffect(() => {
+    window.addEventListener("resize", checkWidth);
+    return () => {
+      window.removeEventListener("resize", checkWidth);
     };
-  
-    useEffect(() => {
-      window.addEventListener("resize", checkWidth);
-      return () => {
-        window.removeEventListener("resize", checkWidth);
-      };
-    }, []);
+  }, []);
 
   return (
     <>
@@ -96,26 +89,19 @@ function Header() {
             style={{ color: "#ffffff" }}
           ></i>
         </div>
-        {/* <div className="burger" onClick={handelDash}>
-          <i
-            className="fa-solid fa-bars fa-xl"
-            style={{ color: "#ffffff" }}
-          ></i>
-        </div> */}
-        <div className="threeDot" onClick={handleThreeDot}>
-          {isLessSize ?
-          <i
-          className="fa-solid fa-bars fa-xl"
-          style={{ color: "#ffffff" }}
-        ></i>
-          :
-          <i
-            className="fa-solid fa-ellipsis-vertical fa-xl"
-            style={{ color: " #fcfcfc" }}
-          ></i> 
 
-          }
-          
+        <div className="threeDot" onClick={handleThreeDot}>
+          {isLessSize ? (
+            <i
+              className="fa-solid fa-bars fa-xl"
+              style={{ color: "#ffffff" }}
+            ></i>
+          ) : (
+            <i
+              className="fa-solid fa-ellipsis-vertical fa-xl"
+              style={{ color: " #fcfcfc" }}
+            ></i>
+          )}
         </div>
       </div>
 
@@ -128,7 +114,6 @@ function Header() {
         isProfileOpen={isProfileOpen}
         setIsProfileOpen={setIsProfileOpen}
       />
-      <ThreeLine isDashOpen={isDashOpen} setIsDashOpen={setIsDashOpen} />
     </>
   );
 }
