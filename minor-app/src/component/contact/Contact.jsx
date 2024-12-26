@@ -1,16 +1,22 @@
+import Empty from "../empty/Empty";
+import "./Contact.css";
 
-
-import './Contact.css';
-
-
-import React from 'react'
+import React from "react";
 
 const Contact = () => {
+  const Contact = "Contact ";
   return (
-    <div className='contact_page'>
-      <h3>hello i am contact page.</h3>
+    <div className="contact_page">
+      <div className="contact_content">
+        <div className="about_info">
+          <Empty pageName={Contact}/>
+        </div>
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Contact
+export default Contact;
+
+
+

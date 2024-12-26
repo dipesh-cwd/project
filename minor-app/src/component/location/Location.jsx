@@ -1,14 +1,19 @@
-
-import './Location.css'
-import React from 'react'
+import "./Location.css";
+import React from "react";
+import Empty from "../empty/Empty";
 
 const Location = () => {
-  return (
-    <div className='location_page'>
-        <h3>hello i am location page</h3>
-      
-    </div>
-  )
-}
+  const Contact = "Location ";
 
-export default Location
+  return (
+    <div className="location_page">
+      <div className="location_content">
+        <div className="about_info">
+          <Empty pageName={Contact} />
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Location;

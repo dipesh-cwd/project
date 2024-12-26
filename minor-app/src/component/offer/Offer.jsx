@@ -1,14 +1,19 @@
-
-
-import './Offer.css';
-import React from 'react'
+import "./Offer.css";
+import React from "react";
+import Empty from "../empty/Empty";
 
 const Offer = () => {
-  return (
-    <div className='offer_page'>
-      <h3>hello i am offer page</h3>
-    </div>
-  )
-}
+  const Contact = "Offer ";
 
-export default Offer
+  return (
+    <div className="offer_page">
+      <div className="offer_content">
+        <div className="about_info">
+          <Empty pageName={Contact} />
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Offer;

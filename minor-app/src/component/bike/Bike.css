@@ -2,8 +2,33 @@
 
 
 
+
+
 .bike_page{
-    min-height: 100vh;
-    width: 100vw;
+    min-height: 89vh;
+    width: inherit;
     background-color: #ddd;
+    padding-top: 80px;
+    position: relative;
+    min-width: 360px;
 }
+
+
+.bike_content {
+    height: 540px;
+    width: inherit;
+    border: 0px solid black;
+    padding: 55px;
+    overflow-y: scroll;
+    position: relative;
+    display: flex;
+    justify-content: center;
+   
+   
+    
+    
+  }
+  
+  .bike_content::-webkit-scrollbar {
+      display: none;
+    }

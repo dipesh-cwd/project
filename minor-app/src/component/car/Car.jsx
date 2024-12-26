@@ -1,14 +1,18 @@
-
 import "./Car.css";
-import React from 'react'
+import React from "react";
+import Empty from "../empty/Empty";
 
 const Car = () => {
+  const Contact = "Car ";
   return (
     <div className="car_page">
-      <h3>hello i am page for car.
-      </h3>
+      <div className="car_content">
+        <div className="about_info">
+          <Empty pageName={Contact} />
+        </div>
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Car
+export default Car;

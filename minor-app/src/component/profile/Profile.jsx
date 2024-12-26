@@ -1,14 +1,19 @@
-
-
-import './Profile.css';
-import React from 'react'
+import "./Profile.css";
+import React from "react";
+import Empty from "../empty/Empty";
 
 const Profile = () => {
-  return (
-    <div className='profile_page'>
-      <h3>hello i am your profile page.</h3>
-    </div>
-  )
-}
+  const Contact = "Profile ";
 
-export default Profile
+  return (
+    <div className="profile_page">
+      <div className="profile_content">
+        <div className="about_info">
+          <Empty pageName={Contact} />
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Profile;

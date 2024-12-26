@@ -1,14 +1,19 @@
-
-
-import './Setting.css';
-import React from 'react'
+import "./Setting.css";
+import React from "react";
+import Empty from "../empty/Empty";
 
 const Setting = () => {
-  return (
-    <div className='setting_page'>
-      <h3>hello i am setting page.</h3>
-    </div>
-  )
-}
+  const Contact = "Setting ";
 
-export default Setting
+  return (
+    <div className="setting_page">
+      <div className="setting_content">
+        <div className="about_info">
+          <Empty pageName={Contact} />
+        </div>
+      </div>{" "}
+    </div>
+  );
+};
+
+export default Setting;

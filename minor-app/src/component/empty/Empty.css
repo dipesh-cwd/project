@@ -1,0 +1,18 @@
+
+
+.empty_page p{
+
+
+    border: 0px solid black;
+    padding: 40px 10px;
+    max-width: 750px;
+    background-color: #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.352);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    font-size: 1.1rem;
+    color: red;
+    font-weight: 900;
+
+
+}
