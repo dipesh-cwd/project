@@ -12,11 +12,11 @@ function DropDown() {
     setIsDropDown(!isDropDown);
   }
   function changeName(name) {
-    if (name !== "Car" && name !== "Hice" && name !== "Bike") {
+    setISName(name);
+
+    setTimeout(() => {
       setISName("Category");
-    } else {
-      setISName(name);
-    }
+    }, 30000);
   }
 
   const btnRef = useRef(null);
