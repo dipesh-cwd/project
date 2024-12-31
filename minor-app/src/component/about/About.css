@@ -84,3 +84,12 @@
   }
 }
 
+@media (max-width: 750px) {
+
+  .p{
+    font-size: 4vw;
+  }
+  .p h2{
+    font-size: 1em;
+  }
+}

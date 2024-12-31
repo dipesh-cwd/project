@@ -28,17 +28,26 @@ box-shadow: 0 6px 12px rgba(0,0,0,0.15);
 .card_img{
     width: 100%;
     height: 200px;
-    object-fit: cover;
     border-bottom: 2px solid #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
 }
 
 .card_img img{
     height: 180px;
     width: 180px;
-    margin-top: 15px;
+    /* margin-top: 15px; */
     border-radius: 50%;
     object-fit: cover;
+}
+@media(max-width : 750px){
+
+.card_img img{
+    height: 150px;
+    width: 150px;
+}
 }
 
 
@@ -90,3 +99,44 @@ box-shadow: 0 6px 12px rgba(0,0,0,0.15);
 
 
 }
+
+
+@media(max-width : 400px){
+
+    .card_img img{
+        height: 120px;
+        width: 120px;
+    }
+
+    .team_cards{
+        flex: 1 1 100%;
+        max-width: 75%;
+    }
+
+    .card_img{
+        width: 100%;
+        height: 170px;
+        
+      
+    }
+
+    .team_name{
+        font-size: 1em;
+        font-weight: bold;
+        margin-bottom: 2px;
+        margin-top: 0px;
+    
+    }
+    
+    .team_work{
+        font-size: 0.7em;
+        margin-bottom: 2.5px;
+    
+    }
+    
+    .team_email{
+        font-size: 0.6em;
+        margin-bottom: 0px;
+    }
+    
+    }
