@@ -79,25 +79,19 @@ function ThreeDot({ ThreeDotOpen, setIsThreeDotOpen }) {
           <div className="user_btn" style={{ width: "100%" }}>
             <NavLink
               to="/profile"
-              className={({ isActive }) =>
-                `btn_profile  btn_style ${isActive ? "active" : ""}`
-              }
+              className="btn_profile  btn_style"
             >
               Profile
             </NavLink>
             <NavLink
               to="/setting"
-              className={({ isActive }) =>
-                `btn_profile  btn_style ${isActive ? "active" : ""}`
-              }
+              className="btn_profile  btn_style "
             >
               Setting
             </NavLink>
             <NavLink
               to="/help"
-              className={({ isActive }) =>
-                `btn_profile  btn_style ${isActive ? "active" : ""}`
-              }
+              className="btn_profile  btn_style "
             >
               Help
             </NavLink>{" "}
@@ -106,9 +100,7 @@ function ThreeDot({ ThreeDotOpen, setIsThreeDotOpen }) {
             </button>
             <NavLink
               to="/privacy and policy"
-              className={({ isActive }) =>
-                `btn_profile  btn_style ${isActive ? "active" : ""}`
-              }
+              className="btn_profile  btn_style "
             >
               Privacy & Policy
             </NavLink>

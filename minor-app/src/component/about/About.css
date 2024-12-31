@@ -23,6 +23,7 @@
   justify-content: center;
   align-items: center;
   background-color: #fff;
+  
 }
 
 .p {
@@ -52,6 +53,16 @@
 
 }
 
+.our_team_box{
+  background-color: #eee;
+  padding: 20px;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 1.4em;
+  transition: 0.5s all;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+ }
+
 @media (max-width: 750px) {
   .p{
     padding: 15px;
@@ -64,6 +75,12 @@
     font-size: large;
   
   }
+  h2{
+    font-size: large;
+  }
 
+  .our_team_box{
+    font-size: large;
+  }
 }
 

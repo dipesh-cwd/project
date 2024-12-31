@@ -9,11 +9,11 @@
   flex-direction: column;
   align-items: center;
   border-radius: 10px;
-  background-color: rgba(255, 255, 255, 0.089);
-  backdrop-filter: blur(5px);
+  background-color: #eee;
   z-index: 999;
   cursor: pointer;
   overflow: hidden;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .btn_style {
@@ -22,27 +22,25 @@
   border-radius: 10px;
   border: none;
   background-color: transparent;
-  color: white;
-  font-weight: 0;
+  color: black;
   cursor: pointer;
-  text-align: center;
   text-decoration: none;
+  text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .btn_style:hover {
-  background: rgba(255, 255, 255, 0.159);
+  background: #ddd;
   backdrop-filter: blur(2px);
-  color: black;
 }
 
 .site_name {
   color: black;
   width: 100%;
   height: 50px;
-  background-color: rgba(255, 255, 255, 0.256);
+  background-color: white;
   backdrop-filter: blur(5px);
   display: flex;
   flex-direction: column;
@@ -140,6 +138,6 @@
   }
 }
 
-.active{
+.active {
   color: blue;
 }

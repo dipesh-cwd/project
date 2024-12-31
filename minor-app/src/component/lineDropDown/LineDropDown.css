@@ -12,7 +12,7 @@
 .name_icons {
   height: 40px;
   width: 100%;
-  color: white;
+  color: black;
   cursor: pointer;
 
   position: relative;
@@ -28,9 +28,8 @@
 }
 
 .name_icons:hover {
-  background: rgba(255, 255, 255, 0.159);
-  backdrop-filter: blur(2px);
-  color: black;
+  background: #ddd;
+  
 }
 
 .btn_containers {
@@ -57,11 +56,15 @@
   z-index: 999;
   padding: 5px 0px;
   text-decoration: none;
-  color: white;
+  color: black;
 }
 
 .dropDown_btns:hover {
-  background-color: rgba(255, 255, 255, 0.229);
-  backdrop-filter: blur(5px);
-  color: black;
+  background-color: #ddd;
+
+}
+
+
+.active{
+  color: blue;
 }
