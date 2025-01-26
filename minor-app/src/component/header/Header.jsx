@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import { useState, useEffect } from "react";
 import "./Header.css";
 import Nav from "./nav/Nav.jsx";
@@ -55,12 +56,21 @@ function Header() {
         setIsLogoOpen={setIsLogoOpen}
       />
       <div className="header">
-        <img
+        {/* <img
           src={LogoPic}
           alt="Logo pic"
           className="logo"
           onClick={openLogoPic}
+        /> */}
+        <NavLink to="/">
+        <img
+          src={LogoPic}
+          alt="Logo pic"
+          className="logo"
+          onDoubleClick={openLogoPic}
         />
+        </NavLink>
+       
         <Nav />
 
         <div className="search">

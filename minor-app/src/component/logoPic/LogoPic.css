@@ -1,40 +1,51 @@
+.logo-big-box {
+  height: 350px;
+  width: 350px;
+  border: 0px solid black;
+  position: fixed;
+  top: 85px;
+  left: 1%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(2px);
+  z-index: 999;
+}
+.logo-box {
+  height: 300px;
+  width: 300px;
+  border: 0px solid black;
+  border: 1px solid black;
+  border-radius: 50%;
+}
 
+.logo-box img {
+  height: 100%;
+  width: 100%;
+  border: none;
+}
 
-.logo-big-box{
-    height: 350px;
-    width: 350px;
-    border: 0px solid black;
+.logo-close {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  font-size: 2em;
+  cursor: pointer;
+}
+
+@media (max-width: 400px) {
+  .logo-big-box {
+    height: 250px;
+    width: 250px;
     position: fixed;
-    top: 20px;
-    left: 1%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.089);
-    backdrop-filter: blur(2px);
-   z-index: 999;
-}
-.logo-box{
-    height: 300px;
-    width: 300px;
-    border: 0px solid black;
-    border: 1px solid black;
-   border-radius: 50%;
-}
+    top: 100px;
+    left: 9%;
+  }
 
-
-.logo-box img{
-    height: 100%;
-    width: 100%;
-    border: none;
-}
-
-.logo-close{
-    position: absolute;
-    top: -8px;
-    right: -8px;
-    font-size: 2em;
-cursor: pointer;
-
+  .logo-box {
+    height: 200px;
+    width: 200px;
+  }
 }

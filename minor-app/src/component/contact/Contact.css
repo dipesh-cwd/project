@@ -1,23 +1,56 @@
 .contact_page {
   min-height: 89vh;
   width: inherit;
-  background-color: #ddd;
+  background-color: #fff;
   padding-top: 80px;
   position: relative;
   min-width: 360px;
 }
 
 .contact_content {
-  height: 540px;
+  height: 89vh;
   width: inherit;
-  border: 0px solid black;
   padding: 55px;
-  overflow-y: scroll;
   position: relative;
   display: flex;
   justify-content: center;
 }
+.contact_form{
+  height: 250px;
+  text-align: center;
+  border: 1px solid black;
+  
+}
+.contact_form form{
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+  margin-top: 14px;
 
-.contact_content::-webkit-scrollbar {
-  display: none;
+}
+
+.form_box{
+  position: relative;
+}
+
+.form_box label{
+  position: absolute;
+  top: -16px;
+}
+
+
+input[type="text"],input[type="email"]{
+  border: none;
+  border-bottom: 2px solid black;
+  outline: none;
+}
+
+textarea{
+  padding: 4px 4px;
+  min-width: 200px;
+  min-height: 60px;
 }

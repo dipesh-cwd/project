@@ -56,7 +56,7 @@ function Footer() {
             <li onClick={goToYoutube} className="footer_navLink">
               YouTube
             </li>
-            <li>WhatsApp</li>
+          
             <li onClick={goToFacebook} className="footer_navLink">
               Facebook
             </li>

@@ -7,7 +7,7 @@ import ThreeLineNav from "../threeLineNav/ThreeLineNav";
 function ThreeDot({ ThreeDotOpen, setIsThreeDotOpen }) {
   const btnRef = useRef(null);
 
-  function handelBoxOpen(event) {
+  function handelBoxOpen(event){
     if (btnRef.current && !btnRef.current.contains(event.target)) {
       setIsThreeDotOpen(false);
     }
